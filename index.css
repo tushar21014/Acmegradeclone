@@ -21,23 +21,26 @@
     background-repeat: no-repeat;
     background-position: bottom;
     cursor: pointer;
+    background-size: 100% !important;
 }
 
 .child-1{
-    background-image: url('https://www.acmegrade.com/images/inter/inter1.png');
+    background: #03138b url('https://www.acmegrade.com/images/inter/inter1.png') no-repeat bottom center;
+    /* background-image: url('https://www.acmegrade.com/images/inter/inter1.png'); */
 }
 .child-2{
     background: #0063d3 url('https://www.acmegrade.com/images/inter/inter2.png') no-repeat bottom center;
     /* background-image: url('https://www.acmegrade.com/images/inter/inter2.png'); */
 }
 .child-3{
-    background-image: url('https://www.acmegrade.com/images/inter/inter3.png');
+    background: #f3018c url('https://www.acmegrade.com/images/inter/inter3.png') no-repeat bottom center;
+    /* background-image: url('https://www.acmegrade.com/images/inter/inter3.png'); */
 }
 .child-4{
-    background-image: url('https://www.acmegrade.com/images/inter/inter4.png');
+    background: #35065c url('https://www.acmegrade.com/images/inter/inter4.png') no-repeat bottom center;
 }
 .child-5{
-    background-image: url('https://www.acmegrade.com/images/inter/inter5.png');
+    background: #c276fa url('https://www.acmegrade.com/images/inter/inter5.png') no-repeat bottom center;
 }
 
 .innerText{
