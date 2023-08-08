@@ -22,10 +22,6 @@
     background-position: bottom;
     cursor: pointer;
 }
-/* 
-.child-1:hover{
-    background: unset;
-} */
 
 .child-1{
     background-image: url('https://www.acmegrade.com/images/inter/inter1.png');
