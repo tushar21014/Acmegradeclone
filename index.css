@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.father{
+    display: flex;
+    /* min-width: 100vw; */
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.child{
+    width: 100%;
+    height: 100%;
+    /* margin: 0px 5px; */
+    background-color: aqua;
+    /* border: 2px solid black; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    cursor: pointer;
+}
+/* 
+.child-1:hover{
+    background: unset;
+} */
+
+.child-1{
+    background-image: url('https://www.acmegrade.com/images/inter/inter1.png');
+}
+.child-2{
+    background: #0063d3 url('https://www.acmegrade.com/images/inter/inter2.png') no-repeat bottom center;
+    /* background-image: url('https://www.acmegrade.com/images/inter/inter2.png'); */
+}
+.child-3{
+    background-image: url('https://www.acmegrade.com/images/inter/inter3.png');
+}
+.child-4{
+    background-image: url('https://www.acmegrade.com/images/inter/inter4.png');
+}
+.child-5{
+    background-image: url('https://www.acmegrade.com/images/inter/inter5.png');
+}
+
+.innerText{
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    width:100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+}

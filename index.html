@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha382s3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="grandFather">
+        <div class="father" id="father">
+
+            <div class="child child-1" id="child-1">
+                <div class="innerText innerText-1">
+                    HackaThon
+                </div>
+            </div>
+            <div class="child child-2" id="child-2">
+                <div class="innerText innerText-2">
+                    HackaThon
+                </div>
+            </div>
+            <div class="child child-3" id="child-3">
+                <div class="innerText innerText-3">
+                    HackaThon
+                </div>
+            </div>
+            <div class="child child-4" id="child-4">
+                <div class="innerText innerText-4">
+                    HackaThon
+                </div>
+            </div>
+            <div class="child child-5" id="child-5">
+                <div class="innerText innerText-5">
+                    HackaThon
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    
+    var father = document.getElementById('father');
+    var child = document.getElementsByClassName('child');
+    var child1 = document.getElementById("child-1");
+    var child2 = document.getElementById("child-2");
+    var child3 = document.getElementById("child-3");
+    var child4 = document.getElementById("child-4");
+    var child5 = document.getElementById("child-5");
+
+    child1.addEventListener("mouseover",function () {
+        child5.style.width = "10%"
+        child4.style.width = "10%"
+        child3.style.width = "10%"
+        child2.style.width = "10%"
+        child1.style.width = "60%"
+        child5.style.transition = "width 1s linear";
+        child4.style.transition = "width 1s linear";
+        child3.style.transition = "width 1s linear";
+        child2.style.transition = "width 1s linear";
+        child1.style.transition = "width 1s linear";
+        father.style.justifyContent="end"
+        child1.style.background="unset"
+        if(child2.style.background=="unset"){
+            child2.style.transition = "background image 0.4s linear";
+            child2.style.backgroundImage="url('https://www.acmegrade.com/images/inter/inter2.png')"
+            // child2.style.backgroundRepeat="no-repeat";
+            child2.style.backgroundPosition="center";
+            
+        }
+    })
+    
+    child2.addEventListener("mouseover",function () {
+        child5.style.width = "10vw"
+        child4.style.width = "10vw"
+        child3.style.width = "10vw"
+        child1.style.width = "10vw"
+        child2.style.width = "60vw"
+        child5.style.transition = "width 0.5s linear";
+        child4.style.transition = "width 0.5s linear";
+        child3.style.transition = "width 0.5s linear";
+        child2.style.transition = "width 0.5s linear";
+        child1.style.transition = "width 0.5s linear";
+        father.style.justifyContent="space-around"
+        child2.style.background="unset"
+        if(child1.style.background=="unset"){
+            // child1.style.transition = "background image 0.4s linear";
+            // child1.style.background= "#0063d3 url('https://www.acmegrade.com/images/inter/inter1.png') no-repeat bottom center";
+            child1.style.transition = "background image 0.4s linear";
+            child1.style.backgroundImage="url('https://www.acmegrade.com/images/inter/inter1.png')"
+            // child2.style.backgroundRepeat="no-repeat";
+            child1.style.backgroundPosition="center";
+        }
+    })
+
+    // child1.addEventListener("mouseout",function () {
+    //     child5.style.width = "100%"
+    //     child4.style.width = "100%"
+    //     child3.style.width = "100%"
+    //     child2.style.width = "100%"
+    //     child1.style.width = "100%"
+    //     child5.style.transition = "width 2s linear"
+    //     child4.style.transition = "width 2s linear"
+    //     child3.style.transition = "width 2s linear"
+    //     child2.style.transition = "width 2s linear"
+    //     child1.style.transition = "width 2s linear"
+    // })
+</script>
+</html>
