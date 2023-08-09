@@ -1,5 +1,9 @@
 var father = document.getElementById('father');
 var child = document.getElementsByClassName('child');
+var child_content = document.getElementsByClassName('intern_section');
+var intern_wrap = document.getElementsByClassName('intern_wrap');
+
+
 var images = [
     'https://www.acmegrade.com/images/inter/inter1.png',
     'https://www.acmegrade.com/images/inter/inter2.png',
@@ -16,17 +20,26 @@ var colors = [
     "#c276fa"
 ]
 
+
 for (let i = 0; i < child.length; i++) {
     child[i].addEventListener("mouseover", function () {
         for (let j = 0; j < child.length; j++) {
             if (j === i) {
+                
                 child[j].style.width = "60%";
                 child[j].style.opacity = 0;
                 child[j].style.overflow = "hidden";
+                
+                intern_wrap[j].style.width = "60%";
+                
+                child_content[j].style.display = "flex";
             } else {
+                intern_wrap[j].style.width = "10vw";
                 child[j].style.width = "10vw";
                 child[j].style.opacity = 1;
                 child[j].style.overflow = "";
+
+                child_content[j].style.display = "none";
             }
 
             child[j].style.transition = "width 0.5s linear, opacity 0.5s linear";
